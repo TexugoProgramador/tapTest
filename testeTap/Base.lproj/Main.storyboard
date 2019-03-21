@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testeTap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7G-Mv-cRS">
+                                <rect key="frame" x="10" y="30" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YBy-Gs-OWp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB4-fw-0Wq">
+                                <rect key="frame" x="10" y="90" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="q8v-ok-VEA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAn-ii-toe">
+                                <rect key="frame" x="10" y="150" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WoD-GC-Zgz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trO-Dl-LRY">
+                                <rect key="frame" x="10" y="210" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cOm-Mk-yGB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7I-jo-nEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yPQ-MB-RES" appends="YES" id="TJC-e0-2YD"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7G-Mv-cRS" secondAttribute="trailing" constant="10" id="3CI-u5-lEQ"/>
+                            <constraint firstItem="x7G-Mv-cRS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="81a-rG-BHu"/>
+                            <constraint firstItem="x7G-Mv-cRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AHq-2E-3H5"/>
+                            <constraint firstItem="AAn-ii-toe" firstAttribute="top" secondItem="TB4-fw-0Wq" secondAttribute="bottom" constant="10" id="EIg-FO-QVS"/>
+                            <constraint firstItem="R7I-jo-nEJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FIz-6m-sct"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R7I-jo-nEJ" secondAttribute="trailing" id="GwO-sd-bUB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R7I-jo-nEJ" secondAttribute="bottom" id="LjO-cS-yOf"/>
+                            <constraint firstItem="trO-Dl-LRY" firstAttribute="top" secondItem="AAn-ii-toe" secondAttribute="bottom" constant="10" id="NRC-y2-jZM"/>
+                            <constraint firstItem="trO-Dl-LRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Oi0-lz-sbf"/>
+                            <constraint firstItem="R7I-jo-nEJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ou5-9n-zKZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AAn-ii-toe" secondAttribute="trailing" constant="10" id="T3X-uQ-H2W"/>
+                            <constraint firstItem="TB4-fw-0Wq" firstAttribute="top" secondItem="x7G-Mv-cRS" secondAttribute="bottom" constant="10" id="YGr-Zw-Lak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TB4-fw-0Wq" secondAttribute="trailing" constant="10" id="duv-y9-pp0"/>
+                            <constraint firstItem="AAn-ii-toe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="edK-HP-q4F"/>
+                            <constraint firstItem="TB4-fw-0Wq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hGL-WL-WtX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="trO-Dl-LRY" secondAttribute="trailing" constant="10" id="xaN-zH-Rxp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="yPQ-MB-RES" appends="YES" id="cXf-CP-W1j"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="x7G-Mv-cRS" id="t75-os-Ztv"/>
+                        <outlet property="button2" destination="TB4-fw-0Wq" id="KO5-gr-4LU"/>
+                        <outlet property="button3" destination="AAn-ii-toe" id="d6A-lr-en7"/>
+                        <outlet property="button4" destination="trO-Dl-LRY" id="pYQ-Uw-HZC"/>
+                        <outlet property="touchPosition" destination="yPQ-MB-RES" id="GJ8-gB-rDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yPQ-MB-RES">
+                    <connections>
+                        <action selector="touchView:" destination="BYZ-38-t0r" id="cfk-pg-GbN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="463.19999999999999" y="111.0944527736132"/>
+        </scene>
+    </scenes>
+</document>
